@@ -16,7 +16,7 @@ DEVICE_TYPES = [
 ]
 
 
-def detect(transport_string):
+def detect(transport_string='hid'):
     """Detect the first available device and return it to the user."""
     for device_type in DEVICE_TYPES:
         try:
